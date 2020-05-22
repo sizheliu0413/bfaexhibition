@@ -6,8 +6,34 @@
     <title>360&deg; Image</title>
     <meta name="description" content="360&deg; Image - A-Frame">
     <script src="lib/aframe-master.js"></script>
+      
+      <style>
+			body {
+				font-family: Monospace;
+				background-color: #000;
+				color: #000;
+				margin: 0px;
+				overflow: hidden;
+			}
+
+			#info {
+				position: absolute;
+				padding: 10px;
+				width: 100%;
+				text-align: center;
+			}
+
+			a {
+				text-decoration: underline;
+				cursor: pointer;
+			}
+
+		</style>
   </head>
   <body>
+      
+      <div id="info">Please use W A S D to zoom and mouse to rotate
+		</div>
       
     <a-scene>
         <a-text value="Please use W A S D to zoom and mouse to rotate" color="black"></a-text>
